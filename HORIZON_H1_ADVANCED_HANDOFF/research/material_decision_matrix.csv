@@ -1,0 +1,9 @@
+component,option,role,availability,performance_reason,embodied_reason,source,simulation_required,status
+Primary structure,Reinforced concrete frame/slab,Baseline,Verify locally,Structural/visual baseline; not selected for thermal performance alone,Embodied-carbon concern; compare optimized/lower-carbon alternatives,Ghana Building Code,Yes,Provisional
+Exterior wall,Code-compliant local masonry/block assembly,Baseline,High/verify,Simulate U-value/solar response,Compare embodied energy with alternatives,Ghana Building Code + IFC Ghana precedent,Yes,Provisional
+Exterior wall,AAC/aerated block,Alternative,Verify supplier,Potential thermal-resistance benefit,Need local EPD/supply data,Manufacturer/local research required,Yes,Research
+Roof,High-reflectance waterproof insulated roof,Baseline direction,Verify,Reduce roof solar heat gain,Product-specific lifecycle data required,DOE cool-roof guidance + Ghana code,Yes,Provisional
+Glazing,Shaded low-SHGC/low-e where justified,Research baseline,Verify,Reduce solar heat gain while preserving daylight,Product-specific,DOE window guidance,Yes,Research
+Shading,External fins/overhangs,Baseline direction,High,Block solar before it enters glazing,Low/moderate depending material,DOE passive design,Yes,Provisional
+Interior paint,Low-emission/low-VOC,Research baseline,Verify,IAQ,Product-specific,EPA Indoor AirPlus,No,Research
+Landscape,Functional shade + stormwater landscape,Research direction,Site-specific,Outdoor comfort and solar control,Site-specific,Passive design / project research,Yes,Research

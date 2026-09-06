@@ -25,10 +25,10 @@ export const outputs = [
   },
   {
     number: "03",
-    title: "Energy simulation",
-    status: "Planned",
+    title: "Energy + water demonstrator",
+    status: "Synthetic demo",
     detail:
-      "A future 24-hour model of solar generation, household demand, battery storage and grid availability.",
+      "Ten synthetic day scenarios with energy and water balances, storage limits and explicit outage behaviour. Weather-backed validation remains future work.",
   },
   {
     number: "04",
@@ -39,9 +39,9 @@ export const outputs = [
   },
   {
     number: "05",
-    title: "Digital twin + interface",
-    status: "Planned",
+    title: "Interactive H1 study",
+    status: "Research interface",
     detail:
-      "A future representation of the home’s state, designed to explain what matters without demanding constant attention.",
+      "An explorable 3D concept with component research, a shared timeline and state-based explanations. It is not connected to a physical home.",
   },
 ];

@@ -1,0 +1,9 @@
+flowchart LR
+SUN[Sun] --> PV[PV Array]
+PV --> INV[Inverter]
+GRID[Grid] --> METER[Meter]
+METER --> INV
+INV <--> BAT[Battery]
+INV --> DB[Distribution]
+DB --> NORMAL[Normal Loads]
+DB --> CRIT[Critical Loads]

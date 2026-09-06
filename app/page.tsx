@@ -12,24 +12,17 @@ import { SystemMap } from "@/components/diagrams/SystemMap";
 import { Ecosystem } from "@/components/Ecosystem";
 import { researchModules } from "@/content/research";
 import { FounderPortrait } from "@/components/FounderPortrait";
+import { HeroGallery } from "@/components/media/HeroGallery";
 
 export default function Home() {
   return (
     <main id="main-content">
       <section className="hero" aria-labelledby="hero-heading">
-        <Image
-          className="hero-image"
-          src="/images/horizon-home.webp"
-          alt="Architectural concept of a shaded contemporary African home, with warm materials and residents on a garden path."
-          fill
-          preload
-          sizes="100vw"
-          quality={85}
-        />
+        <HeroGallery />
         <div className="hero-shade" />
         <div className="hero-content">
           <p className="eyebrow hero-eyebrow">
-            <span /> Africa + Beyond
+            <span /> Africa & Beyond
           </p>
           <h1 id="hero-heading">
             Intelligent spaces.

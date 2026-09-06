@@ -23,6 +23,7 @@ export function Footer() {
               {item.label}
             </Link>
           ))}
+          <Link href="/research/h1">H1 interactive study</Link>
         </nav>
         <a href={`mailto:${site.email}`}>{site.email}</a>
       </div>

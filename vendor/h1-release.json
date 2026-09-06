@@ -1,0 +1,9 @@
+{
+  "package": "@horizon/h1",
+  "version": "0.1.0",
+  "tarball": "horizon-h1-0.1.0.tgz",
+  "integrity": "sha512-vwaCHc8GA1XL+lCwv6REusstyMajQtV5jAIoP2OV04oflgCZ9DPymX6UPAJBqbTSx5ANbQmgKs6Iq+lGhqOtlg==",
+  "sourceProject": "horizon-h1",
+  "releaseDate": "2026-09-06",
+  "note": "Compiled package and deployable assets. Independent source is maintained in the sibling project."
+}

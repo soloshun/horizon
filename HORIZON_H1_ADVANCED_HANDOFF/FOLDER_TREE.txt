@@ -1,0 +1,23 @@
+HORIZON_H1_ADVANCED_HANDOFF/
+├── README.md
+├── HORIZON_H1_COMPLETE_HANDOFF.md
+├── docs/
+│   ├── 01_PROJECT_CHARTER.md
+│   ├── 02_BUILDING_AND_MATERIALS.md
+│   ├── 03_SYSTEM_ARCHITECTURE.md
+│   ├── 04_ENERGY_WATER_CLIMATE.md
+│   ├── 05_EDGE_AI_SECURITY.md
+│   ├── 06_INTERACTIVE_3D_BLENDER_UX.md
+│   └── 07_SIMULATION_RESEARCH_AND_VALIDATION.md
+├── implementation/
+│   ├── WEBSITE_REPO_INTEGRATION.md
+│   ├── H1_BUILD_ROADMAP.md
+│   └── ASTRA_MASTER_PROMPT.md
+├── diagrams/
+├── schemas/
+├── research/
+│   ├── REFERENCES.md
+│   ├── IP_AND_AUTHORSHIP.md
+│   └── material_decision_matrix.csv
+├── reference_assets/
+└── parent_context/

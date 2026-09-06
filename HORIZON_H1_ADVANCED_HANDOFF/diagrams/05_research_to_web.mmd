@@ -1,0 +1,11 @@
+flowchart LR
+WEATHER[NASA POWER / PVGIS] --> PY[Research Pipeline]
+BLD[EnergyPlus] --> PY
+PV[PV Model] --> PY
+LOAD[Load Model] --> PY
+WATER[Water Model] --> PY
+PY --> JSON[Scenario JSON]
+JSON --> STATE[Browser State]
+STATE --> THREE[Three.js]
+STATE --> UI[Research UI]
+STATE --> AI[Explanation]

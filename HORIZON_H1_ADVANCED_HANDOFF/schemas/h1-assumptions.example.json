@@ -1,0 +1,33 @@
+{
+  "project": {
+    "name": "Horizon H1 \u2014 Intelligent Home Study",
+    "status": "research-prototype",
+    "reference_location": "Accra, Ghana",
+    "exact_site": null
+  },
+  "modeling": {
+    "weather_source": null,
+    "weather_period": null,
+    "energyplus_version": null,
+    "pv_model": null
+  },
+  "building": {
+    "floor_area_m2": null,
+    "orientation_deg": null,
+    "occupancy_archetype": "H1 Reference Household A"
+  },
+  "energy": {
+    "pv_dc_kw": null,
+    "battery_nominal_kwh": null,
+    "battery_min_soc_pct": null,
+    "critical_load_definition": "TBD after load inventory"
+  },
+  "water": {
+    "potable_tank_l": null,
+    "rain_tank_l": null,
+    "rainwater_default_use": "non-potable research use"
+  },
+  "truthfulness": {
+    "all_numeric_values_require_source_or_simulation_tag": true
+  }
+}

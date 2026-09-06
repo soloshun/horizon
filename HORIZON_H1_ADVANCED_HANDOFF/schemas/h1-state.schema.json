@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Horizon H1 Scenario State",
+  "type": "object",
+  "required": [
+    "time",
+    "weather",
+    "grid",
+    "energy",
+    "water",
+    "indoor",
+    "edge"
+  ],
+  "properties": {
+    "time": {
+      "type": "object",
+      "required": [
+        "iso",
+        "hour"
+      ],
+      "properties": {
+        "iso": {
+          "type": "string"
+        },
+        "hour": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 24
+        }
+      }
+    },
+    "weather": {
+      "type": "object",
+      "required": [
+        "condition",
+        "outdoorTempC",
+        "relativeHumidityPct",
+        "irradianceWm2",
+        "rainMmHr"
+      ],
+      "properties": {
+        "condition": {
+          "enum": [
+            "sunny",
+            "cloudy",
+            "rain"
+          ]
+        },
+        "outdoorTempC": {
+          "type": "number"
+        },
+        "relativeHumidityPct": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "irradianceWm2": {
+          "type": "number",
+          "minimum": 0
+        },
+        "rainMmHr": {
+          "type": "number",
+          "minimum": 0
+        },
+        "windMs": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "grid": {
+      "type": "object",
+      "required": [
+        "available",
+        "importKw",
+        "exportKw"
+      ],
+      "properties": {
+        "available": {
+          "type": "boolean"
+        },
+        "importKw": {
+          "type": "number",
+          "minimum": 0
+        },
+        "exportKw": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "energy": {
+      "type": "object",
+      "required": [
+        "pvKw",
+        "loadKw",
+        "batterySocPct",
+        "batteryPowerKw",
+        "criticalMode"
+      ],
+      "properties": {
+        "pvKw": {
+          "type": "number",
+          "minimum": 0
+        },
+        "loadKw": {
+          "type": "number",
+          "minimum": 0
+        },
+        "batterySocPct": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "batteryPowerKw": {
+          "type": "number"
+        },
+        "criticalMode": {
+          "type": "boolean"
+        }
+      }
+    },
+    "water": {
+      "type": "object",
+      "required": [
+        "potableTankPct",
+        "rainTankPct",
+        "flowLpm",
+        "leakState"
+      ],
+      "properties": {
+        "potableTankPct": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "rainTankPct": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "flowLpm": {
+          "type": "number",
+          "minimum": 0
+        },
+        "leakState": {
+          "enum": [
+            "normal",
+            "suspected",
+            "confirmed"
+          ]
+        }
+      }
+    },
+    "indoor": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "tempC": {
+            "type": "number"
+          },
+          "rhPct": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "co2Ppm": {
+            "type": "number",
+            "minimum": 0
+          },
+          "occupied": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "edge": {
+      "type": "object",
+      "required": [
+        "online",
+        "internet",
+        "localAutomation"
+      ],
+      "properties": {
+        "online": {
+          "type": "boolean"
+        },
+        "internet": {
+          "type": "boolean"
+        },
+        "localAutomation": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

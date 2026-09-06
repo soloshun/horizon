@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { Icon } from "@/components/Icons";
 import {
   SectionLabel,
   TextLink,
@@ -32,6 +34,24 @@ export default function ResearchPage() {
             <i className="status-dot" /> Research → Architecture
           </span>
         </div>
+      </section>
+      <section
+        className="h1-research-invitation"
+        aria-label="Interactive H1 study"
+      >
+        <div>
+          <span className="eyebrow">The study, now interactive</span>
+          <h2>
+            Step inside <em>the thinking.</em>
+          </h2>
+          <p>
+            Explore the model, follow a day of energy and water, and uncover the
+            research behind each system.
+          </p>
+        </div>
+        <Link href="/research/h1" className="button button-dark">
+          Explore Horizon H1 <Icon name="arrowUp" />
+        </Link>
       </section>
       <section className="research-film" aria-label="H1 architectural film">
         <HorizonVideo

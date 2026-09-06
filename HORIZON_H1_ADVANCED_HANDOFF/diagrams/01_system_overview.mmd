@@ -1,0 +1,15 @@
+flowchart TB
+ENV[Outdoor Environment] --> SENSOR[Sensors]
+GRID[Utility Grid] --> HOUSE[H1 Physical House]
+PV[PV Array] --> HOUSE
+PV --> BAT[Battery]
+BAT --> HOUSE
+WATER[Water Supply] --> HOUSE
+SENSOR --> EDGE[Local Edge Platform]
+EDGE --> RULES[Deterministic Rules]
+EDGE --> ML[ML / Optimization]
+EDGE --> LLM[SLM/LLM Explanation]
+RULES --> HOUSE
+EDGE --> UI[Resident Interface]
+LLM --> UI
+EDGE <--> CLOUD[Optional Cloud]

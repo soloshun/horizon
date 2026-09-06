@@ -2,6 +2,7 @@
 import { useRef, useState, type FormEvent } from "react";
 import { contactSchema, createDraft, interests } from "@/lib/contact";
 import { Icon } from "./Icons";
+import { Select } from "./Select";
 export function ContactForm({ email }: { email: string }) {
   const [draft, setDraft] = useState<ReturnType<typeof createDraft> | null>(
     null,
@@ -84,12 +85,13 @@ export function ContactForm({ email }: { email: string }) {
         />
       </div>
       <div className="form-field">
-        <label htmlFor="interest">What brings you here?</label>
-        <select name="interest" id="interest" defaultValue="General">
-          {interests.map((i) => (
-            <option key={i}>{i}</option>
-          ))}
-        </select>
+        <label id="interest-label">What brings you here?</label>
+        <Select
+          name="interest"
+          options={interests}
+          defaultValue="General"
+          labelledBy="interest-label"
+        />
       </div>
       <div className="form-field">
         <label htmlFor="message">Your message</label>

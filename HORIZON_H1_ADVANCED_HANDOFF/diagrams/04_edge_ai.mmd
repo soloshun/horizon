@@ -1,0 +1,11 @@
+flowchart TB
+DEV[Devices] --> GW[Edge Gateway]
+GW --> BUS[Event Bus]
+BUS --> STATE[Home State]
+STATE --> RULES[Rules]
+STATE --> DB[Local History]
+STATE --> ML[ML]
+STATE --> LLM[Explanation]
+STATE --> UI[Resident UI]
+LLM --> UI
+GW <--> CLOUD[Optional Cloud]

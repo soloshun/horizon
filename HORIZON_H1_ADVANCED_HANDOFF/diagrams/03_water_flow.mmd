@@ -1,0 +1,9 @@
+flowchart LR
+MAIN[Primary Water] --> TANK[Potable Tank]
+TANK --> PUMP[Pump]
+PUMP --> HOUSE[Fixtures]
+FLOW[Flow Meter] --> EDGE[Edge]
+LEAK[Leak Sensors] --> EDGE
+RAIN[Roof Rainwater] --> FIRST[Screen / First Flush]
+FIRST --> RTANK[Rain Tank]
+RTANK --> NONP[Non-potable Uses]
