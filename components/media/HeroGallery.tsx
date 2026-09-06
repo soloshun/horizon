@@ -5,14 +5,14 @@ import { useEffect, useRef, useState } from "react";
 
 const views = [
   {
-    src: "/images/horizon-evening.webp",
-    title: "The neighbourhood at dusk",
-    alt: "Elevated dusk view across a hillside neighbourhood of solar-roofed courtyard homes, with residents dining and walking along lit garden paths, a bay and city skyline beyond.",
-  },
-  {
     src: "/images/horizon-home.webp",
     title: "Your space",
     alt: "A solar-roofed contemporary home at sunset, timber screens and banana plants along the driveway, with an EV charging and the coastal city skyline in the distance.",
+  },
+  {
+    src: "/images/horizon-evening.webp",
+    title: "The neighbourhood at dusk",
+    alt: "Elevated dusk view across a hillside neighbourhood of solar-roofed courtyard homes, with residents dining and walking along lit garden paths, a bay and city skyline beyond.",
   },
   {
     src: "/images/horizon-family.webp",
