@@ -1,0 +1,40 @@
+{
+  "name": "horizon",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "format": "prettier --write app components content lib scripts/*.mjs tests docs README.md *.json *.ts *.mjs",
+    "test:browser": "node scripts/qa.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "5.3.0",
+    "@fontsource/cormorant-garamond": "5.3.0",
+    "motion": "13.2.0",
+    "next": "16.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.63.0",
+    "@types/node": "26.4.1",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.4",
+    "prettier": "3.9.6",
+    "sharp": "0.35.4",
+    "typescript": "6.0.3"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

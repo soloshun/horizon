@@ -1,0 +1,9 @@
+horizon_website_handoff/
+HORIZON_WEBSITE_HANDOFF_PACK.zip
+artifacts/
+scripts/
+tests/
+docs/
+.env*
+.git/
+.DS_Store

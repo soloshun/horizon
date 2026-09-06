@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+.vercel/
+.env*
+!.env.example
+*.tsbuildinfo
+.DS_Store
+test-results/
+playwright-report/
+artifacts/qa/
+artifacts/blender/frames/
+*.blend1
+HORIZON_WEBSITE_HANDOFF_PACK.zip
